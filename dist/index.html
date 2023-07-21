@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coalition Tech Test</title>
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,900;1,900&family=Oswald:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
+  </head>
+  <body>
+    <section class="header z-[9999]">
+      <div class="header__wrapper">
+        <div
+          class="branding w-[100%] lg:fixed lg:flex lg:items-center lg:justify-between"
+        >
+          <div
+            class="logo py-[1rem] pl-[1rem] lg:pl-[13rem] lg:flex lg:items-center lg:gap-[1rem]"
+          >
+            <img src="./img/Logoo.png" alt="" />
+            <img
+              src="./img/LOSANGELES MOUNTAINS.png"
+              alt=""
+              class="hidden lg:hidden"
+              id="img2"
+            />
+          </div>
+          <div class="header__nav py-[1.5rem] z-[99]">
+            <ul class="lg:flex lg:items-center lg:gap-[3rem]">
+              <li><a href="#history">01. HISTORY</a> <span></span></li>
+              <li><a href="#team">02. TEAM</a> <span></span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="toggle__menu z-[999] lg:hidden">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="h-[60vh] lg:h-[100vh] m-auto bg-[url('img/backgroundimage.png')] bg-cover lg:bg-no-repeat lg:bg-cover"
+    ></section>
+
+    <section
+      id="history"
+      class="history lg:z-[-9] h-[100vh] m-auto bg-[url('img/Bg2.png')] bg-cover lg:bg-no-repeat lg:bg-cover relative"
+    >
+      <div class="container">
+        <div class="history__wrapper">
+          <div class="title relative lg:py-[5rem]">
+            <h1 class="font-oswald text-[#647791] text-[8rem]">01.</h1>
+            <h2
+              class="font-oswald text-[2rem] text-primary absolute top-[5rem] left-[7.7rem] lg:top-[10.5rem] lg:left-[7.8rem]"
+            >
+              HISTORY
+            </h2>
+            <p
+              class="absolute top-[10rem] left-[3.7rem] text-justify lg:top-[15rem] lg:left-[3.75rem] lg:font-lato lg:max-w-[65rem] lg:text-[1.2rem] lg:tracking-wider"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+              veritatis fuga, sed quia ipsa nobis autem molestias in, unde
+              quibusdam quo officia facilis repellendus. Impedit vel mollitia
+              illum perferendis, debitis ab, cumque veniam ex saepe quas earum
+              perspiciatis ut, voluptate quaerat vero facere error laborum quam
+              temporibus velit ducimus maiores? Quis nisi porro officia sunt.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="tinyslider h-[25vh] bg-primary bg-opacity-80 absolute bottom-0 flex items-center gap-[2rem] mx-[4rem]"
+      >
+        <div class="slider__content py-[2rem]">
+          <div class="container"></div>
+          <img src="./img/carousel1.png" alt="" class="w-[20rem]" />
+        </div>
+        <div class="slider__content py-[2rem]">
+          <img src="./img/carousel2.png" alt="" class="w-[20rem]" />
+        </div>
+        <div class="slider__content py-[2rem]">
+          <img src="./img/carousel1.png" alt="" class="w-[20rem]" />
+        </div>
+        <div class="slider__content py-[2rem]">
+          <img src="./img/carousel2.png" alt="" class="w-[20rem]" />
+        </div>
+      </div>
+      <div class="slider__nav">
+        <ul>
+          <li><i class="fa-solid fa-circle"></i></li>
+          <li><i class="fa-solid fa-circle"></i></li>
+          <li><i class="fa-solid fa-circle"></i></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="team" class="climb">
+      <div class="container">
+        <div class="climb__wrapper">
+          <div class="title__content lg:flex lg:items-center lg:gap-[7rem]">
+            <div class="title relative lg:py-[5rem] -z-50">
+              <h1 class="font-oswald text-[#647791] text-[8rem]">02.</h1>
+              <h2
+                class="font-oswald text-[2rem] text-primary absolute top-[5rem] left-[8.7rem] lg:top-[10.5rem]"
+              >
+                CLIMB
+              </h2>
+            </div>
+            <div class="content">
+              <p
+                class="translate-x-[3.8rem] max-w-[24rem] translate-y-[-2rem] text-justify lg:block lg:translate-x-0 lg:translate-y-0 lg:text-[1.2rem] lg:font-lato lg:max-w-[65rem] lg:tracking-wider"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Adipisci veritatis fuga, sed quia ipsa nobis autem molestias in,
+                unde quibusdam quo officia facilis repellendus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="tabs h-[100vh] m-auto bg-[url('img/bg3.png')] bg-cover lg:bg-no-repeat lg:bg-cover lg:bg-center"
+    >
+      <div class="tabs__wrapper">
+        <!-- tabs in web -->
+        <div class="tabs__box hidden lg:block">
+          <div class="tabs__btn bg-primary">
+            <ul class="flex items-center gap-[2rem] mx-[1.5rem] lg:mx-[13rem]">
+              <li id="tab-1" class="tab__nav active py-[.3rem] px-[1rem]">
+                <a
+                  href="javascript:void(0)"
+                  class="text-[#b0b4be] font-oswald font-bold text-[1.2rem]"
+                  >MOUNTAIN 1</a
+                >
+              </li>
+              <li id="tab-2" class="tab__nav py-[.3rem] px-[1rem]">
+                <a
+                  href="javascript:void(0)"
+                  class="text-[#b0b4be] font-oswald font-bold text-[1.2rem]"
+                  >MOUNTAIN 2</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="tabs__content py-[6rem] ml-[1rem]">
+            <div
+              id="tab-1-content"
+              class="tabs__context active lg:mx-[13rem] bg-white w-[20rem] py-[.8rem] px-[1.5rem]"
+            >
+              <h1
+                class="text-primary font-oswald font-bold text-[1.5rem] py-[.5rem]"
+              >
+                SCHEDULE
+              </h1>
+              <div class="date flex items-center justify-between">
+                <p>25 Nov 2016</p>
+                <span>Vestibulumviverra</span>
+              </div>
+              <div class="date flex items-center justify-between">
+                <p>28 Nov 2016</p>
+                <span>Vestibulumviverra</span>
+              </div>
+              <div class="date flex items-center justify-between py-[1rem]">
+                <p>18 Dec 2016</p>
+                <span>Vestibulumviverra</span>
+              </div>
+              <div class="date flex items-center justify-between">
+                <p>07 Jan 2017</p>
+                <span>Vestibulumviverra</span>
+              </div>
+            </div>
+            <div
+              id="tab-2-content"
+              class="tabs__context translate-y-[-12.9rem] -z-10 lg:mx-[13rem] bg-white w-[20rem] py-[.8rem] px-[1.5rem]"
+            >
+              <h1
+                class="text-primary font-oswald font-bold text-[1.5rem] py-[.5rem]"
+              >
+                SCHEDULE
+              </h1>
+              <div class="date flex items-center justify-between">
+                <p>14 Jan 2017</p>
+                <span>Lorem ipsum</span>
+              </div>
+              <div class="date flex items-center justify-between">
+                <p>24 Jan 2017</p>
+                <span>Lorem ipsum</span>
+              </div>
+              <div class="date flex items-center justify-between py-[1rem]">
+                <p>26 Nov 2017</p>
+                <span>Lorem ipsum</span>
+              </div>
+              <div class="date flex items-center justify-between">
+                <p>30 Jan 2018</p>
+                <span>Lorem ipsum</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- accordion in mobile -->
+        <div class="dropdown ml-[1rem] lg:hidden">
+          <ul class="accordion w-[40rem] m-auto flex flex-col gap-[1rem]">
+            <li class="bg-primary px-[1.5rem] py-[1rem]">
+              <input type="radio" name="accordion" id="first" checked />
+              <label
+                for="first"
+                class="font-bold flex items-center cursor-pointer py-[1rem] px-[1.2rem] text-white text-[1.8rem]"
+                >MOUNTAIN 1</label
+              >
+              <div
+                class="drop__content lg:mx-[13rem] bg-white w-[20rem] py-[.8rem] px-[1.5rem]"
+              >
+                <h1
+                  class="text-primary font-oswald font-bold text-[1.3rem] py-[.5rem]"
+                >
+                  SCHEDULE
+                </h1>
+                <div class="date flex items-center justify-between">
+                  <p>25 Nov 2016</p>
+                  <span>Vestibulumviverra</span>
+                </div>
+                <div class="date flex items-center justify-between">
+                  <p>28 Nov 2016</p>
+                  <span>Vestibulumviverra</span>
+                </div>
+                <div class="date flex items-center justify-between py-[1rem]">
+                  <p>18 Dec 2016</p>
+                  <span>Vestibulumviverra</span>
+                </div>
+                <div class="date flex items-center justify-between">
+                  <p>07 Jan 2017</p>
+                  <span>Vestibulumviverra</span>
+                </div>
+              </div>
+            </li>
+            <li class="bg-primary px-[1.5rem] py-[1rem]">
+              <input type="radio" name="accordion" id="second" checked />
+              <label
+                for="second"
+                class="font-bold flex items-center cursor-pointer py-[1rem] px-[1.2rem] text-white text-[1.8rem]"
+                >MOUNTAIN 2</label
+              >
+              <div
+                class="drop__content lg:mx-[13rem] bg-white w-[20rem] py-[.8rem] px-[1.5rem]"
+              >
+                <h1
+                  class="text-primary font-oswald font-bold text-[1.3rem] py-[.5rem]"
+                >
+                  SCHEDULE
+                </h1>
+                <div class="date flex items-center justify-between">
+                  <p>25 Nov 2016</p>
+                  <span>Vestibulumviverra</span>
+                </div>
+                <div class="date flex items-center justify-between">
+                  <p>28 Nov 2016</p>
+                  <span>Vestibulumviverra</span>
+                </div>
+                <div class="date flex items-center justify-between py-[1rem]">
+                  <p>18 Dec 2016</p>
+                  <span>Vestibulumviverra</span>
+                </div>
+                <div class="date flex items-center justify-between">
+                  <p>07 Jan 2017</p>
+                  <span>Vestibulumviverra</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer py-[1rem] bg-primary">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__logo flex items-center justify-between">
+            <img src="./img/Logo2.png" alt="" class="w-[8rem] lg:w-[unset]" />
+            <p
+              class="uppercase text-[.75rem] text-[#63769d] font-lato italic lg:text-[1rem]"
+            >
+              Copyright 2016. All rights Reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+    crossorigin="anonymous"
+  ></script>
+
+  <script>
+    $(document).ready(function () {
+      $(window).on("scroll", function () {
+        if ($(window).scrollTop()) {
+          $(".branding").addClass("bgc");
+        } else {
+          $(".branding").removeClass("bgc");
+        }
+      });
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+
+  <script>
+    var slider = tns({
+      container: ".tinyslider",
+      items: 1,
+      autoplay: false,
+      mouseDrag: true,
+      axis: "horizontal",
+      controls: false,
+      nav: true,
+      autoplayPosition: false,
+      autoplayButton: false,
+      responsive: {
+        900: {
+          items: 4,
+          slideBy: true,
+        },
+      },
+    });
+  </script>
+
+  <script src="./script.js"></script>
+</html>

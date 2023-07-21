@@ -1,0 +1,185 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem ;
+}
+html{
+    overflow-x:hidden;
+    scroll-behavior: smooth;
+}
+
+/* @layer base{
+    .header__nav ul li a{
+        font-family: 'Lora', serif;
+    }
+    
+} */
+
+@layer components{
+    .container{
+        width: 100%;
+        margin: 0 auto;
+        @apply lg:px-[1rem] lg:py-0
+    }
+
+    .header  .header__nav{
+        @apply fixed right-[-20rem] bg-primary h-[100%] top-0 w-[50%] lg:block lg:bg-transparent  lg:h-0
+    }
+    .header  .header__nav.open{
+        @apply right-0 ease-in duration-300
+    }
+    .header  .header__nav.open ul li a{
+        @apply text-white
+    }
+    .header  .header__nav ul {
+        @apply pt-[4rem] ml-[1rem] mr-[1rem] lg:ml-0 lg:mr-0 lg:pt-0
+    }
+    .header  .header__nav ul li{
+        @apply py-[1rem] lg:py-0
+    }
+    .header  .header__nav ul li a{
+        @apply  text-white font-bold font-lato italic
+    }
+    .header  .header__nav ul span{
+        content: "";
+        display: block ;
+        height: 1px;
+        background-color: white;
+        @apply w-full lg:w-[6rem]
+    }
+
+    .header .toggle__menu {
+        @apply absolute right-[1rem] top-6 
+    }
+    .header .toggle__menu span{
+        content:"";
+        display: block;
+        height: .35rem;
+        width: 1.8rem;
+        border-radius: 2rem;
+        background-color: #414f6b;
+    }
+    .header .toggle__menu span:nth-child(2){
+        @apply my-[.3rem]
+    }
+
+    .header .toggle__menu.open span:nth-child(2){
+        @apply  opacity-0
+    }
+
+    .toggle__menu.open span:first-child{
+        @apply rotate-[-50deg] w-[1.7rem]  translate-y-[.6rem] translate-x-[-.2rem] ease-in duration-[300ms]
+    }
+    .toggle__menu.open span:last-child{
+        @apply rotate-[50deg] w-[1.7rem] translate-y-[-.7rem] translate-x-[-.2rem] ease-in duration-[300ms]
+    }
+    .toggle__menu.open{
+        @apply fixed rotate-[180deg] ease-in duration-[300ms] right-4 
+    }
+    .toggle__menu.open span{
+        @apply bg-white
+    }
+
+    .header .branding.sticky{
+        @apply bg-white
+    }
+   
+    .bgc {
+        background: white;
+    }
+    .bgc .logo img{
+        width: 2.83rem;
+    }
+    .bgc .logo #img2{
+        width: 7rem;
+        display:block;
+    }
+    .bgc .header__nav ul li a{
+        color: #414f6b;
+    }
+    .bgc .header__nav ul span{
+        @apply lg:bg-primary
+    }
+
+
+    /* SWIPER*/
+    
+    =
+    .swiper .swiper-pagination .swiper-pagination-bullet-active {
+        background: white;
+    }
+
+     .swiper .swiper-slide img {
+        height: 12rem;
+        width:20rem;
+        object-fit: cover;
+    }
+    
+    .history .tinyslider .slider__content{
+        overflow: hidden;
+        cursor: grab;
+    }
+
+    .history .slider .tns-nav{
+        @apply text-center text-red-600 absolute
+    }
+    
+
+    /*TABS*/
+
+    .tabs .tabs__box .tabs__content .tabs__context {
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+    .tabs .tabs__box .tabs__content .date{
+        @apply font-lato font-light
+    }
+    .tabs .tabs__btn ul li.active a{
+        @apply underline text-primary
+    }
+    .tabs .tabs__btn ul li.active{
+        @apply bg-[#b0b4be]
+    }
+    .tabs__content .tabs__context.active{
+       @apply opacity-100
+    }
+    .tabs__content .tabs__context{
+        @apply opacity-0
+    }
+
+
+     /*ACCORDION*/
+
+    .accordion input[type="radio"]{
+        display:none;
+    }
+    label::before{
+        content:'+';
+        margin-right: .5rem;
+        font-size:1.2rem;
+        padding-bottom:.5rem;
+        margin-right:2rem;
+        transition: ease 300ms;
+    }
+    .accordion .drop__content{
+        max-height:0;
+        background-color: transparent; 
+        overflow: hidden;
+        transition: max-height 300ms, padding 300ms;
+    }
+    .accordion input[type="radio"]:checked + label + .drop__content{
+        max-height:40rem;
+        background-color: white; 
+    }
+
+    .accordion input[type="radio"]:checked + label::before{
+        content:"-";
+        transition: ease 300ms; 
+        
+    }
+
+    
+}
